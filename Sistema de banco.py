@@ -83,6 +83,14 @@ while opcao.upper() != "SC":
         print(f"Fim do extrato\n\nSaldo da Conta: R${saldo_usuario}\n")
         
         enter()
+    
+    else:
+        
+        os.system("cls")
+        
+        print("A chave de operação não consta no sistema ou foi digitada errada")
+        
+        enter()
         
         
             
