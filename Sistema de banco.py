@@ -6,6 +6,7 @@ def enter():
     input()
     
     os.system("cls")
+    
 
 login = "Teste"
 senha = "1234"
@@ -21,9 +22,9 @@ senha_usuario = input("Digite sua senha: ")
 while login_usuario.upper() != login.upper() or senha_usuario != senha:
     
     print("Login ou senha inválidos. Tente novamente.")
+    
     login_usuario = input("Digite o nome de usuário ou e-mail: ")
     senha_usuario = input("Digite sua senha: ")
-    
 
 os.system("cls")
 
@@ -54,6 +55,7 @@ while opcao.upper() != "SC":
         os.system("cls")        
         
         valor_deposito = float(input("Digite o valor do depósito: "))
+
         saldo_usuario += valor_deposito
         
         extrato_usuario.append(f"+ {str(valor_deposito)}")
@@ -76,7 +78,6 @@ while opcao.upper() != "SC":
         
         for posicao_operacao in range(len(extrato_usuario)):
             
-            
             print(extrato_usuario[posicao_operacao])
     
         
@@ -97,3 +98,8 @@ while opcao.upper() != "SC":
         
     
     opcao = input("Funções do banco:\n\tDigite S para Saque\n\tDigite D para Depósito\n\tDigite SA para Exibir o Saldo\n\tDigite E para ver o extrato\n\tDigite SC para saír da conta\nDigite aqui: ")
+
+    
+    os.system("cls")
+    
+    print("O Sistema foi finalizado com sucesso!")
