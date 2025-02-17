@@ -22,6 +22,8 @@ senha_usuario = input("Digite sua senha: ")
 while login_usuario.upper() != login.upper() or senha_usuario != senha:
     
     print("Login ou senha inválidos. Tente novamente.")
+
+    enter()
     
     login_usuario = input("Digite o nome de usuário ou e-mail: ")
     senha_usuario = input("Digite sua senha: ")
